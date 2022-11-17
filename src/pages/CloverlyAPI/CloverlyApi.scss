@@ -1,0 +1,77 @@
+@import '../../variables/varibles.scss';
+.ContainerApi{
+    height: 100vh;
+    width: 100%;
+    background-color: $Cream;
+    display: flex;
+    align-items: center;
+    @media (max-width: 1200px) {
+      background-image: url("../../components/img/world.png");   
+      background-repeat: no-repeat; 
+      background-position: center;  
+    }
+  }
+.ApiMain{
+  max-width: 1130px;
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  img{
+    @media (max-width: 1200px) {
+      display: none;             
+    }
+  }
+  @media (max-width: 1200px) {     
+    background-color: rgba(25, 47, 68, 0.5);
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;             
+  }
+}
+.ApiInf{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p{
+    margin-top: 10px;
+    text-align: center;  
+  }
+  h2{
+    margin-top: 10px;
+    text-align: center;
+    @media (max-width: 1200px) {     
+      color: $Cream;
+    }
+  }
+  :nth-child(3){
+    @media (max-width: 1200px) {     
+      color: $Cream;
+    } 
+  }
+}
+.ApiBtns{
+  margin:20px 0;
+  display: flex;
+  flex-direction: row;
+
+  :nth-child(1){
+    margin-right: 20px;
+  }
+  button{
+    @media (max-width: 576px) {          
+      margin: 10px 0;
+    }
+  }
+  @media (max-width: 576px) {     
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+}
+.ApiImg{
+  background: no-repeat url("../../components/img/world.png");
+  background-size: cover;
+}

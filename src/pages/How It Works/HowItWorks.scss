@@ -1,0 +1,73 @@
+@import '../../variables/varibles.scss';
+.ContainerWorks{
+    min-height: 100vh;
+    width: 100%;
+    background-color: $CreamD;
+    display: flex;
+    align-items: center;
+  }
+  .WorksMain{
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: 992px) {     
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+  }
+  .MainLeft{
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    button{
+      background-color: $CreamD;
+      margin-top: 10px;
+    }
+    p{
+      margin-bottom: 10px;
+    }
+    h2{
+      margin-bottom: 10px;
+      @media (max-width: 992px) {     
+        text-align: center;
+      }
+    }
+    @media (max-width: 992px) {   
+      align-items: center;  
+      margin: 40px 0;
+      max-width: 80%;
+    }
+  }
+  .MainRight{
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    .RightTop{
+      margin-bottom: 60px;
+      :nth-child(2){
+        margin: 10px 0;
+      }
+    }
+    .RightMiddle{
+      margin-bottom: 60px;
+      :nth-child(2){
+        margin: 10px 0;
+      }
+    }
+    .RightBottom{
+      :nth-child(2){
+        margin: 10px 0;
+      }
+    }
+    @media (max-width: 992px) {   
+      align-items: center;       
+    }
+  }
+  .RightImg{
+    margin-bottom: 10px;
+  }

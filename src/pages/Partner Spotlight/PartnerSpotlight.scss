@@ -1,0 +1,51 @@
+@import '../../variables/varibles.scss';
+
+.leftPicture{
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+.PartnerContainer{
+    width: 100%;
+    background-color: $CreamD;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 992px) {   
+        align-items: center;  
+        justify-content: center;     
+      }
+  }
+  .rightText{
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    .rightTop{
+      margin-bottom: 60px;
+      :nth-child(2){
+        margin: 10px 0;
+      }
+    }
+    .rightMiddle{
+      margin-bottom: 60px;
+      :nth-child(2){
+        margin: 10px 0;
+      }
+    }
+    .rightBottom{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      :nth-child(2){
+        margin: 10px 0;
+      }
+      .smallText{
+        margin-left: 15px;
+      }
+    }
+    @media (max-width: 992px) {   
+      align-items: center;  
+      justify-content: center;     
+    }
+  }

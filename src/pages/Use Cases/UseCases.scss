@@ -1,0 +1,79 @@
+@import '../../variables/varibles.scss';
+.ContainerUse{
+    width: 100%;
+    background-color: $Cream;
+    display: flex;
+    align-items: center;
+  }
+.UseMain{
+    max-width: 925px;;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+.UseTop{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2{
+    text-align: center;
+    margin: 10px 0;
+  }
+  p{
+    text-align: center;
+  }
+}
+.UseMiddle{
+  display: grid;
+  grid-template-columns: repeat(2,445px);
+  grid-template-rows: repeat(4,155px);
+  gap: 50px;
+  margin: 75px 0;
+  @media (max-width: 992px) {    
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(8,155px);
+  }
+}
+.UseCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 992px) {    
+    justify-content: flex-start;
+  }
+  div{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 992px) {    
+      margin-left: 20px;
+    }
+    p{
+      margin: 10px 0;
+    }
+  }
+}
+.MiddleA{
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  color: #013A51;
+  &:hover{
+    color: $Hover;
+  }
+}
+.UseBottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2{
+    text-align: center;
+   
+  }
+  p{
+    text-align: center;
+    margin: 15px 0;
+  }
+}

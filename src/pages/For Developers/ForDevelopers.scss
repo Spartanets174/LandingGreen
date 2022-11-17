@@ -1,0 +1,62 @@
+@import '../../variables/varibles.scss';
+.ContainerDevs{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #0A2540;
+    display: flex;
+    align-items: center;
+  }
+  .DevsMain{
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: 992px) {     
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+  }
+  .DevsLeft{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    button{
+      margin-top: 10px;
+    }
+    p{
+      margin-bottom: 10px;
+    }
+    h2{
+      margin-bottom: 10px;
+      @media (max-width: 992px) {     
+        text-align: center;
+      }
+    }
+    @media (max-width: 992px) {   
+      align-items: center;  
+      margin: 40px 0;
+      max-width: 80%;
+    }
+  }
+  .DevsLeftButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 45px;
+    @media (max-width: 1350px) {           
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        :first-child{
+        margin-bottom: 10px;    
+        }
+    }
+  }
+  .DevsRight{
+    @media (max-width: 576px) {       
+        display: none;
+       }
+  }

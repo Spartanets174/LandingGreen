@@ -1,0 +1,26 @@
+@import '../../variables/varibles.scss';
+.h2{
+    font-style: normal;
+    font-weight: 400;
+        &__green {
+            color: $Green;           
+        }
+        &__dark{
+            color: $TextDark;
+        }
+        &__white{
+            color: white;
+        }      
+        &__verysmall{
+            font-size: 24px;
+        }  
+        &__small{
+            font-size: 36px;
+        }
+        &__middle{
+           font-size: 42px;
+        }
+        &__big{
+            font-size: 60px;
+        }
+}
